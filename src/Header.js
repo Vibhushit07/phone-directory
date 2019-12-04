@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import './Header.css'
 
 class Header extends Component{
-    render(){
+    render(){   
         return(
             <div className = "header">
-                {this.props.title} 
+                Phone Directory
             </div>
         );
     }
