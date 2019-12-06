@@ -22,7 +22,7 @@ class AddSusbscriber extends Component {
 
     onFormSubmitted = (e) => {
         e.preventDefault();
-        this.props.addSusbscriberHandler(this.state);
+        this.props.addSubscriberHandler(this.state);
         this.setState({
             id: 0,
             name: '',
@@ -42,7 +42,7 @@ class AddSusbscriber extends Component {
                     <Link to="/">
                         <button className="custom-btn">Back</button>
                     </Link>
-                    
+
                     <form className="subscriber-form" onSubmit={this.onFormSubmitted.bind(this)}>
                         <label htmlFor="name" className="label-control">Name: </label><br/>
                         <input id="name" type="text" className="input-control" name="name" onChange={this.inputChangeHandler}/><br/><br/>
